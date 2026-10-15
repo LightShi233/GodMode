@@ -1,8 +1,30 @@
+```
+# Dependency directories
+.gradle/
+build/
+
+# IDE files
+.idea/
 *.iml
-.gradle
-/local.properties
+*.ipr
+*.iws
+
+# Logs
+*.log
+
+# Environment
+.env
+.env.local
+*.env.*
+
+# OS generated files
 .DS_Store
-/build
-/captures
-.externalNativeBuild
-.idea
+Thumbs.db
+
+# Build artifacts
+*.jar
+*.war
+*.aar
+*.apk
+*.class
+```
