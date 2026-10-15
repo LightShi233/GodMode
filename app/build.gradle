@@ -92,9 +92,8 @@ dependencies {
     implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
     
     // Glide with Compose support
-    implementation 'com.github.bumptech.glide:glide:4.16.0'
-    implementation 'com.github.bumptech.glide:compose:1.0.0-beta01'
-    annotationProcessor 'com.github.bumptech.glide:compiler:4.16.0'
+    // Coil for Compose image loading
+    implementation 'io.coil-kt:coil-compose:2.6.0'
     
     // Xposed API (compileOnly)
     compileOnly 'de.robv.android.xposed:api:82'
