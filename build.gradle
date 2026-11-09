@@ -2,34 +2,29 @@
 
 buildscript {
     repositories {
-        maven { url 'https://maven.aliyun.com/repository/public/' } //jcenter和central
-        maven { url 'https://maven.aliyun.com/repository/google/' }
-        maven { url 'https://maven.aliyun.com/repository/gradle-plugin/' }
         google()
-        mavenLocal()
         mavenCentral()
+        maven { url 'https://maven.aliyun.com/repository/public/' }
+        maven { url 'https://maven.aliyun.com/repository/google/' }
+        maven { url "https://jitpack.io" }
+        mavenLocal()
     }
-
-    ext.kotlin_version = "1.6.10"
+    
+    ext.kotlin_version = "2.0.21"
     dependencies {
-        classpath 'com.android.tools.build:gradle:7.1.0'
-
+        classpath 'com.android.tools.build:gradle:8.2.2'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-        classpath "org.jetbrains.kotlin:kotlin-android-extensions:$kotlin_version"
-        // NOTE: Do not place your application dependencies here; they belong
-        // in the individual module build.gradle files
     }
 }
 
 allprojects {
     repositories {
-        maven { url 'https://maven.aliyun.com/repository/public/' } //jcenter和central
+        google()
+        mavenCentral()
+        maven { url 'https://maven.aliyun.com/repository/public/' }
         maven { url 'https://maven.aliyun.com/repository/google/' }
         maven { url "https://jitpack.io" }
         mavenLocal()
-        mavenCentral()
-        google()
-        jcenter()
     }
 }
 
